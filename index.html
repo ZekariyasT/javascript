@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    &nbsp; &nbsp; Enter The First Number: <input type="text" id="n1"><br><br>
+   Enter The Second Number: <input type="text" id="n2"><br><br>
+   &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   Result =  <button id="result" style="width:190px; height:20px; background-color:white; border:1px solid ;"></button><br><br>
+   <input type="submit" value="Add" onclick="myfun()">&nbsp;&nbsp;
+   <input type="submit" value="Sub" onclick="myfun1()">&nbsp;&nbsp;
+   <input type="submit" value="Mult" onclick="myfun2()">&nbsp;&nbsp;
+   <input type="submit" value="Div" onclick="myfun3()">&nbsp;&nbsp;
+<script>
+   function myfun(){
+        var a = parseInt(document.getElementById('n1').value);
+         var b =parseInt( document.getElementById('n2').value);
+         document.getElementById('result').innerHTML=a+b;
+    
+    }
+    function myfun1(){
+        var a = parseInt(document.getElementById('n1').value);
+         var b =parseInt( document.getElementById('n2').value);
+         document.getElementById('result').innerHTML=a-b;
+    
+    }
+    function myfun2(){
+        var a = parseInt(document.getElementById('n1').value);
+         var b =parseInt( document.getElementById('n2').value);
+         document.getElementById('result').innerHTML=(a*b);
+    
+    }
+    function myfun3(){
+        var a = parseInt(document.getElementById('n1').value);
+         var b =parseInt( document.getElementById('n2').value);
+         document.getElementById('result').innerHTML=(a/b);
+    
+    }
+</script>
+</body>
+
+</html>

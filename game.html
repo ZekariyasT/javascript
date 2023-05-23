@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            height: 36px;
+             width:105px;
+        }
+        button{
+            height: 36px;
+             width:105px;
+             font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple game 15</h1>
+    <p style="font-weight:bold;">Instruction: fill the boxes by using 1-9 numbers and the sum of all rows and columns should be 15.</p>
+     <div>  
+        <input type="text" id="r1"  maxlength="1">
+        <input type="text" id="r2" maxlength="1">
+        <input type="text" id="r3" maxlength="1">
+     </div>
+    
+    <div>
+        <input type="text" id="r4" maxlength="1">
+        <input type="text"  id="r5" maxlength="1">
+        <input type="text"  id="r6" maxlength="1">
+    </div>
+    <div>
+        <input type="text"  id="r7" maxlength="1">
+        <input type="text"  id="r8" maxlength="1">
+        <input type="text"  id="r9" maxlength="1">
+    </div>
+     
+     &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+     <button onclick="myfun()">Check</button> 
+     <script>
+function myfun(){
+    const ac=[];
+    ac[0]=document.parseInt(getElementById('r1').value);
+    ac[1]=document.parseInt(getElementById('r2').value);
+    ac[2]=document.parseInt(getElementById('r3').value);
+    ac[3]=document.parseInt(getElementById('r4').value);
+    ac[4]=document.parseInt(getElementById('r5').value);
+    ac[5]=document.parseInt(getElementById('r6').value);
+    ac[6]=document.parseInt(getElementById('r7').value);
+    ac[7]=document.parseInt(getElementById('r8').value);
+    ac[8]=document.parseInt(getElementById('r9').value);
+
+    if((ac[0]+ac[1]+ac[2]==15)&&(ac[3]+ac[4]+ac[5]==15)&&(ac[6]+ac[7]+ac[8]==15)&&(ac[0]+ac[3]+ac[6]==15)&&(ac[1]+ac[4]+ac[7]==15)&&(ac[2]+ac[5]+ac[8]==15)&&(ac[0]+ac[4]+ac[8]==15))
+            {
+                 alert("well done");
+             }
+            
+    else{
+        alert("try again");
+    }
+}
+     </script>
+</body>
+</html>

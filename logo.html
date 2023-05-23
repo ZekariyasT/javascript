@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right,green,yellow);
+        }
+        .a{
+            border: 2px solid rgb(0, 195, 255);
+            border-radius: 25px;
+            width: 700px;
+            height: 250px;
+            background-color: rgb(119, 123, 126);
+           
+        }
+        .b{
+            border: 2px solid rgb(0, 195, 255);
+            border-radius: 40px;
+            background: url(logo.jpg) center/cover;
+            width: 250px;
+            height: 250px;
+            float: left;
+            
+        }
+        .c{
+            float: right;
+            border: 1px solid rgb(238, 18, 29);
+            border-radius: 35px;
+            width: 440px;
+            height: 250px;
+            
+        }
+        #q{
+            border: 2px solid white;
+            border-radius: 5px;
+            height: 26px;
+            margin-top: 50px;
+        }
+        #qw{
+            border: 2px solid white;
+            border-radius: 5px;
+            height: 26px;
+            
+        }
+        button{
+            border: 1px solid black;
+            border-radius: 15px;
+            height: 26px;
+            width: 190px;
+            margin-left: 10px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>0px
+    <center>
+        <h1 id="x">Login Form</h1>
+        <div class="a"> 
+            <div class="b">  </div>
+           
+        <div class="c"> 
+            
+                User Name: <input type="text" id="q" > <br><br>
+                Password: <input type="text" id="qw"> <br><br>
+                <button onclick="fun()">Login</button>
+                <button>Change password</button>
+              
+        </div>
+            
+        
+        </div>
+    </center>
+    
+    <script>
+        function fun(){
+        var a = document.getElementById('q').value;
+         var b = document.getElementById('qw').value;
+         if((a==="abc")&&(b==="abc")){
+             alert("login successfully");
+
+         }
+        else{
+            alert("wrong username or password");
+        } }
+         q.addEventListener("focus",function(){
+q.style.background="orange";
+       });
+       q.addEventListener("blur",function(){
+           q.style.background="white";
+       });
+       qw.addEventListener("focus",function(){
+qw.style.background="orange";
+       });
+       qw.addEventListener("blur",function(){
+           qw.style.background="white";
+       });
+       var x=document.getElementById('x').value;
+       x.addEventListener("mouseover",function(){
+           x.style.color="red";
+       });
+       x.addEventListener("mouseout",function(){
+           x.style.color="black";
+       });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+   <label for="name">Name</label> 
+   <input type="text" name="fname" id="name">
+   <button id="btn">Click</button>
+   <script>
+       var y= document.getElementById("name");
+       var x=document.getElementById("btn");
+       x.addEventListener("click",function(){
+           alert(y.value);
+
+       });
+       y.addEventListener("focus",function(){
+y.style.background="green";
+       });
+       x.addEventListener("mouseover",function(){
+           y.style.background="red";
+       });
+       x.addEventListener("mouseout",function(){
+           x.style.background="green";
+       });
+       y.addEventListener("blur",function(){
+           y.style.background="white";
+       });
+
+   </script>
+</body>
+</html>
